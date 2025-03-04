@@ -1,0 +1,156 @@
+.badge-medal {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 100px;
+    animation-name: badgeanim;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes badgeanim {
+0%   { opacity:0 ; width: 150px; top: 405px; left: 655px;}
+30%  { opacity:1 ; width: 150px; top: 405px; left: 655px;}
+70%  { opacity:1 ; width: 50px;  top: 455px; left: 720px;}
+100% { opacity:1 ; width: 50px;  top: 455px; left: 720px;}
+}
+
+.badge-medal2 {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 100px;
+    animation-name: badgeanim2;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes badgeanim2 {
+0%   { opacity:0 ; width: 150px; top: 405px; left: 1035px;}
+30%  { opacity:1 ; width: 150px; top: 405px; left: 1035px;}
+70%  { opacity:1 ; width: 50px;  top: 455px; left: 1098px;}
+100% { opacity:1 ; width: 50px;  top: 455px; left: 1098px;}
+}
+
+.badge-medal3 {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 100px;
+    animation-name: badgeanim3;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes badgeanim3 {
+0%   { opacity:0 ; width: 150px; top: 405px; left: 1415px;}
+30%  { opacity:1 ; width: 150px; top: 405px; left: 1415px;}
+70%  { opacity:1 ; width: 50px;  top: 455px; left: 1477px;}
+100% { opacity:1 ; width: 50px;  top: 455px; left: 1477px;}
+}
+
+.badge-honor {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 600px;
+    left: 730px;
+    animation-name: honoranim;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes honoranim {
+0%   { opacity:0 ; width: 75px; top: 730px; left: 700px;}
+30%  { opacity:1 ; width: 75px; top: 730px; left: 700px;}
+70%  { opacity:1 ; width: 25px; top: 780px; left: 730px;}
+100% { opacity:1 ; width: 25px; top: 780px; left: 730px;}
+}
+
+.badge-honor2 {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 600px;
+    left: 730px;
+    animation-name: honoranim2;
+    animation-duration: 1.5s;
+    animation-delay: 2.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes honoranim2 {
+0%   { opacity:0 ; width: 75px; top: 730px; left: 1080px;}
+30%  { opacity:1 ; width: 75px; top: 730px; left: 1080px;}
+70%  { opacity:1 ; width: 25px; top: 780px; left: 1110px;}
+100% { opacity:1 ; width: 25px; top: 780px; left: 1110px;}
+}
+
+.badge-honor3 {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 600px;
+    left: 730px;
+    animation-name: honoranim3;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes honoranim3 {
+0%   { opacity:0 ; width: 75px; top: 730px; left: 1460px;}
+30%  { opacity:1 ; width: 75px; top: 730px; left: 1460px;}
+70%  { opacity:1 ; width: 25px; top: 780px; left: 1490px;}
+100% { opacity:1 ; width: 25px; top: 780px; left: 1490px;}
+}
+
+.badge-honor4 {
+    position: absolute;     
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 600px;
+    left: 730px;
+    animation-name: honoranim4;
+    animation-duration: 1.5s;
+    animation-delay: 2.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes honoranim4 {
+0%   { opacity:0 ; width: 75px; top: 1045px; left: 873px;}
+30%  { opacity:1 ; width: 75px; top: 1045px; left: 873px;}
+70%  { opacity:1 ; width: 25px; top: 1095px; left: 923px;}
+100% { opacity:1 ; width: 25px; top: 1095px; left: 923px;}
+}
+
+.badge-honor5 {
+    position: absolute; 
+    width: 50px; 
+    opacity:0 ;
+    z-index: 10; 
+    top: 600px;
+    left: 730px;
+    animation-name: honoranim5;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes honoranim5 {
+0%   { opacity:0 ; width: 75px; top: 1045px; left: 1270px;}
+30%  { opacity:1 ; width: 75px; top: 1045px; left: 1270px;}
+70%  { opacity:1 ; width: 25px; top: 1095px; left: 1300px;}
+100% { opacity:1 ; width: 25px; top: 1095px; left: 1300px;}
+}
