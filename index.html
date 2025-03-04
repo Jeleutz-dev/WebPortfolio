@@ -22,146 +22,75 @@
   <link rel="stylesheet" href="assets/css/flaticon.css">
   <link rel="stylesheet" href="assets/css/icomoon.css">
 
+  <link rel="stylesheet" href="assets/css/index-css.css">
+
 </head>
 
 <style>
-.col-md-4 {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.33333%;
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+.progress-group p {
+  margin: 0;
+  text-transform: uppercase;
+}
 
-.text-center {
-  text-align: center !important; }
+.progress-group + .progress-group {
+  margin-top: 20px;
+}
 
-.d-flex {
-display: -webkit-box !important;
-display: -ms-flexbox !important;
-display: flex !important; }
+.progress {
+  position: relative;
+  margin: 10px 0 0;
+  background-color: #666;
+  border-radius: 0;
+  height: 10px;
+  box-shadow: none;
+  overflow: visible;
+}
 
-.ftco-animate {
-  opacity: 0;
-  visibility: hidden; }
+.progress-bar {
+  position: relative;
+  background-color: #ffbd39;
+  height: 10px;
+}
 
-.services-1 {
-  margin-bottom: 40px;
-  padding: 2em;
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17); }
-  .services-1 .icon {
-    display: block;
-    margin-bottom: 30px; }
-    .services-1 .icon i {
-      font-size: 60px;
-      line-height: 1.0;
-      color: #ffbd39; }
-  .services-1 .desc h3 {
-    line-height: 1.3;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    position: relative;
-    color: #fff; }
-    .services-1 .desc h3:after {
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      right: 0;
-      content: '';
-      width: 30px;
-      height: 1px;
-      background: #ffbd39;
-      margin: 0 auto; }
-    .services-1 .desc h3 a {
-      color: #fff; }
-  .services-1 .desc h4 {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 18px; }
-  .services-1 .desc span {
-    display: block;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: #ffbd39; }
-  .services-1:hover {
-    background: #ffbd39; }
-    .services-1:hover .icon i {
-      color: #fff; }
-    .services-1:hover h3 {
-      color: #000000; }
-      .services-1:hover h3:after {
-        background: #000000; }
-
-.block-23 ul {
-  padding: 0; }
-  .block-23 ul li, .block-23 ul li > a {
-    display: table;
-    line-height: 1.5;
-    margin-bottom: 15px; }
-  .block-23 ul li span {
-    color: rgba(255, 255, 255, 0.7); }
-  .block-23 ul li .icon, .block-23 ul li .text {
-    display: table-cell;
-    vertical-align: top; }
-  .block-23 ul li .icon {
-    width: 40px;
-    font-size: 18px;
-    padding-top: 2px;
-    color: white; }
-
-
-    .contact-section .box {
-  width: 100%;
-  display: block;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px; }
-  @media (max-width: 991.98px) {
-    .contact-section .box {
-      margin-bottom: 30px; } }
-  .contact-section .box .icon {
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 0 auto;
-    margin-bottom: 2em;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%; }
-    .contact-section .box .icon span {
-      color: #ffbd39;
-      font-size: 30px; }
-  .contact-section .box h3 {
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase; }
-
-    
-.search-form .icon {
+.progress-bar:before {
+  content: '';
   position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  right: 0;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 20px 15px;
+  border-color: transparent transparent #ffbd39 transparent;
+  z-index: 2;
+}
 
-.about-author {
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
--ms-border-radius: 5px;
-border-radius: 5px; }
-.about-author .desc h3 {
-  font-size: 24px; }
+.progress-bar:after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 20px 15px;
+  border-color: transparent transparent #0c0c0c transparent;
+  z-index: 1;
+}
 
+.progress-bar span {
+  width: 40px !important;
+  position: absolute;
+  top: -30px;
+  right: -7px;
+  color: #000;
+  z-index: 3;
+}
+
+.progressbar-back-text {
+  display: none;
+}
 </style>
-
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
@@ -200,7 +129,10 @@ border-radius: 5px; }
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
+                <h2 style="margin-bottom: -50px;color: #ffbd39;">Hello!</h2>
+                <h1 style="color: #ffbd39;"> <b style="color: #fff;">I am  </b>
+                <br>Jose Enrico</h1>
+                <h2 style="margin-top: -40px;">a Full-stack Web Developer</h2>
                 <button >
                   <a href="cv/Leuterio Updated Resume 2024.pdf" style="text-decoration:none; color: #fff;" target="_blank" download="Leuterio-Resume" >Resume</a>
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
@@ -308,6 +240,43 @@ border-radius: 5px; }
                   <br> by clicking the buttons and button below.
                 </h3>
               </div>
+
+              <div class="row" style="z-index:2; margin-bottom: 40px; margin-top: -250px;">
+                <div class="col-sm-6">
+                    <h2>My Skills</h2>
+                    <div class="progress-group">
+                        <p>PHP</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="95">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-group">
+                        <p>HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="100">
+                            </div>
+                        </div><!-- /.progress -->
+                    </div><!-- /.progress-group -->
+
+                    <div class="progress-group">
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="95">
+                            </div>
+                        </div><!-- /.progress -->
+                    </div><!-- /.progress-group -->
+
+                    <div class="progress-group">
+                        <p>JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="90">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
               <div class="intro--options" style="justify-content: space-evenly;">
                 <div class="col-md-6 text-center d-flex ftco-animate" style="width: 100%;">
@@ -552,5 +521,6 @@ border-radius: 5px; }
 <script src="assets/js/scrollax.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/numberscript.js"></script>
+<script src="assets/js/bootstrap-progressbar.min.js"></script>
 </body>
 </html>
