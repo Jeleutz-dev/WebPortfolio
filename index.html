@@ -23,74 +23,14 @@
   <link rel="stylesheet" href="assets/css/icomoon.css">
 
   <link rel="stylesheet" href="assets/css/index-css.css">
-
+  <link rel="stylesheet" href="assets/css/progress-bar.css">
+  
 </head>
 
 <style>
-.progress-group p {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.progress-group + .progress-group {
-  margin-top: 20px;
-}
-
-.progress {
-  position: relative;
-  margin: 10px 0 0;
-  background-color: #666;
-  border-radius: 0;
-  height: 10px;
-  box-shadow: none;
-  overflow: visible;
-}
-
-.progress-bar {
-  position: relative;
-  background-color: #ffbd39;
-  height: 10px;
-}
-
-.progress-bar:before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 15px 20px 15px;
-  border-color: transparent transparent #ffbd39 transparent;
-  z-index: 2;
-}
-
-.progress-bar:after {
-  content: '';
-  position: absolute;
-  right: -8px;
-  top: -10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 15px 20px 15px;
-  border-color: transparent transparent #0c0c0c transparent;
-  z-index: 1;
-}
-
-.progress-bar span {
-  width: 40px !important;
-  position: absolute;
-  top: -30px;
-  right: -7px;
-  color: #000;
-  z-index: 3;
-}
-
-.progressbar-back-text {
-  display: none;
-}
+  
 </style>
+
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
@@ -181,15 +121,6 @@
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
-                
-                  <!-- I am a recent graduate with a degree in <br ><b style="color: #ffbd39;">Bachelor of Science in Information Technology </b><br>and two years of hands-on experience as a <br><b style="color: #ffbd39;">Full Stack Developer. </b>
-                  
-                  <br><br>My expertise includes working with <b style="color: #ffbd39;">PHP, HTML,</b><br> <b style="color: #ffbd39;">CSS, JavaScript, and the Laravel framework</b> to build dynamic, <br>user-friendly web applications. 
-                  
-                  <br><br>During my time in the field, I have successfully <br>collaborated on projects that required both <br>front-end and back-end development, <br>showcasing my ability to deliver seamless, <br>high-performance solutions. 
-                  
-                  <br><br>I am passionate about leveraging my skills to create <br>innovative digital experiences and am excited to contribute to a forward-thinking team. -->
-                
                   <h3 style="font-size: 25px; margin-bottom: -40px;">Hey there! <br>I’m <b style="color: #ffbd39;">Jose Enrico Leuterio</b>, </h3>
 
                   <h3>  <br>a <b style="color: #ffbd39;">full-stack web developer</b> passionate 
@@ -204,79 +135,73 @@
                   <br>I build with performance and user experience in mind!  
 
                 </h3>
-                <!-- <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a> -->
+                <br>
+                <h3 style="color: #ffbd39;">Know more about me:</h3>
+               
                 <img style="width: 500px; top: -210px; right: 55px; z-index: -1;" src="assets/img/dark2.png" alt="About Us">
-                <!-- <img src="assets/img/about-visual.png" alt="About Us"> -->
               </div>
-              <div class="about--options">
+              <div class="about--options" style="width: 350px;">
                 <a href="#0">
-                  <h3>Blog</h3>
+                  <h3>Education</h3>
                 </a>
                 <a href="#0">
-                  <h3>Philosophy</h3>
+                  <h3>Skills</h3>
                 </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
+
               </div>
+
+              
             </div>
           </li>
 
-          <li class="l-section section">
+          <li class="l-section section ">
             <div class="intro">
               <div class="intro--banner">
                 <h1>Milestones</h1>
-                <img src="assets/img/milestones.png" style="right: 0px;" alt="Welcome">
+                <!-- <img src="assets/img/milestones.png" style="right: -10px;" alt="Welcome"> -->
                 <h3>
                   Check out my <b style="color: #ffbd39;">Projects & Achievements </b>
                   <br> by clicking the buttons and button below.
                 </h3>
+                <div class="p-bar-container">
+                  <div class="row p-bar">
+                    <div class="progress-bar-container">
+                      <h2>
+                        <label for="php">PHP</label>
+                      </h2>
+                      <div class="progress-bar php">
+                        <progress id="php" min="0" max="100" value="90"></progress>
+                      </div>
+                    </div>
+                    <div class="progress-bar-container">
+                      <h2>
+                        <label for="html">HTML</label>
+                      </h2>
+                      <div class="progress-bar html">
+                        <progress id="html" min="0" max="100" value="95"></progress>
+                      </div>
+                    </div>
+                    <div class="progress-bar-container">
+                      <h2>
+                        <label for="css">CSS</label>
+                      </h2>
+                      <div class="progress-bar css">
+                        <progress id="css" min="0" max="100" value="90"></progress>
+                      </div>
+                    </div>
+                    <div class="progress-bar-container">
+                      <h2>
+                        <label for="js">JavaScript</label>
+                      </h2>
+                      <div class="progress-bar js">
+                        <progress id="js" min="0" max="100" value="85"></progress>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="row" style="z-index:2; margin-bottom: 40px; margin-top: -250px;">
-                <div class="col-sm-6">
-                    <h2>My Skills</h2>
-                    <div class="progress-group">
-                        <p>PHP</p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-transitiongoal="95">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="progress-group">
-                        <p>HTML</p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-transitiongoal="100">
-                            </div>
-                        </div><!-- /.progress -->
-                    </div><!-- /.progress-group -->
-
-                    <div class="progress-group">
-                        <p>CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-transitiongoal="95">
-                            </div>
-                        </div><!-- /.progress -->
-                    </div><!-- /.progress-group -->
-
-                    <div class="progress-group">
-                        <p>JavaScript</p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-transitiongoal="90">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              
 
               <div class="intro--options" style="justify-content: space-evenly;">
                 <div class="col-md-6 text-center d-flex ftco-animate" style="width: 100%;">
@@ -299,79 +224,6 @@
             </div>
           </li>
           
-          <!-- <li class="l-section section">
-            <div class="work" style="bottom: 100px;">
-              <h2 style="font-size: 50px;">Projects</h2>
-              <p class="slider--item-title" style="text-align: center; margin-top: -5px;">PHP • CSS • Javascript • Laravel</p>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="https://jeleutz-dev.github.io/TaskTalk/" target="_blank">
-                      <div class="slider--item-image">
-                        <img src="images/tasktalk.gif" style="height: 100%; width: 130%; margin-left: -15%;">
-                      </div>
-                      <p class="slider--item-title">TaskTalk</p>
-                      <p class="slider--item-description">Collaborative Tool Website</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="https://www.sanjuancity.gov.ph/SanJuanCity/" target="_blank">
-                      <div class="slider--item-image">
-                        <img  src="images/website.gif" style="height: 100%; width: 130%; margin-left: -15%;">
-                      </div>
-                      <p class="slider--item-title">San Juan City Website</p>
-                      <p class="slider--item-description">City Information Website</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="https://sanjuancity.gov.ph/SJ_Directory/public/"  target="_blank">
-                      <div class="slider--item-image">
-                        <img src="images/kiosk.gif" style="height: 100%; width: 130%; margin-left: -15%;">
-                      </div>
-                      <p class="slider--item-title">San Juan City Kiosk Directory</p>
-                      <p class="slider--item-description">City Hall Information Kiosk Website</p>
-                    </a>
-                  </li>
-                  <li class="slider--item">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="images/poster1.png">
-                      </div>
-                      <p class="slider--item-title">The Adventures of Edmar</p>
-                      <p class="slider--item-description">2D Video Game Project</p>
-                    </a>
-                  </li>
-                  <li class="slider--item">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="images/assist.jpg">
-                      </div>
-                      <p class="slider--item-title">Assist Desk</p>
-                      <p class="slider--item-description">Customer Service Website</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-           -->
           <li class="l-section section">
             <div class="hire">
               <h2>You want us to do</h2>
@@ -504,6 +356,18 @@
   </ul>
 </div>
 
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 <script src="assets/js/jquery.animateNumber.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
@@ -521,6 +385,8 @@
 <script src="assets/js/scrollax.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/numberscript.js"></script>
-<script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+
+
 </body>
 </html>
